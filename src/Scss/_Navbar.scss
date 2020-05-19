@@ -1,0 +1,28 @@
+@import "./palette";
+
+header {
+    background-color: map-get($Synthwave, background-alt);
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100px;
+    height: calc(100vh - 40px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    font-family: Office Code Pro;
+    padding: 20px 0;
+    transition: background 0.8s ease;
+}
+.header-synth {
+    background-color: map-get($Synthwave, background-alt);
+}
+.header-gruv {
+    background-color: map-get($Gruvbox, background-alt);
+}
+
+header h2 {
+    margin: 0;
+    font-size: 18px;
+}

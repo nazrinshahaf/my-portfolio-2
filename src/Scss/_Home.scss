@@ -1,0 +1,38 @@
+@import "./palette";
+
+@font-face {
+  font-family: "Office Code Pro";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Office Code Pro");
+}
+.home-page-background {
+  margin: 0 0 0 100px;
+  background-color: map-get($Synthwave, background);
+  height: 100vh;
+  width: calc(100vw - 100px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.home-page-h2-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.home-page-background h1,
+.home-page-background h2 {
+  margin: 0;
+  color: map-get($Synthwave, text-light);
+  font-size: 65px;
+  font-family: Office Code Pro;
+}
+.home-page-background h2 {
+  margin: 30px 0 0 0;
+  font-size: 28px;
+}
+.home-page-tags-fontsize {
+  font-size: 42px;
+}

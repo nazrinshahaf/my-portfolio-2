@@ -1,0 +1,23 @@
+@import "./Scss/Home";
+@import "./Scss/palette";
+@import "./Scss/Navbar";
+@import "./Scss/Projects";
+
+.color-style-tags-synth {
+    color: map-get($Synthwave, tags);
+}
+.color-style-tags-text-synth {
+    color: map-get($Synthwave, tags-text);
+}
+.color-style-declare-synth {
+    color: map-get($Synthwave, declare);
+}
+.color-style-tags-gruv {
+    color: map-get($Gruvbox, tags);
+}
+.color-style-tags-text-gruv {
+    color: map-get($Gruvbox, tags-text);
+}
+.color-style-declare-gruv {
+    color: map-get($Gruvbox, declare);
+}
