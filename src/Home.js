@@ -33,15 +33,17 @@ const Home = () => {
           <span className="color-style-tags-text-synth"> 'Nazrin Shah'</span>
         </h2>
         <h2>
-          <span className="color-style-declare-synth">const </span>
+          <span className="color-style-declare-synth">let </span>
           <span className="color-style-tags-synth">Skills</span> = [{" "}
           <span className="color-style-tags-text-synth">
-            'React', 'JavaScript', 'CSS', 'HTML', <br />
+            'Python', 'JavaScript', 'CSS', 'HTML', <br />
             <span style={{ marginLeft: "50px" }}>
-              'jQuery', 'PostgreSQL', 'Git',{" "}
+              'jQuery', 'PostgreSQL', 'React', 'Bootstrap',{" "}
             </span>
             <br />
-            <span style={{ marginLeft: "50px" }}>'Bootstrap', 'Python'</span>
+            <span style={{ marginLeft: "50px" }}>
+              'React', '<span className="blinking-cursor-synth"> </span>
+            </span>
           </span>{" "}
           ]
         </h2>
