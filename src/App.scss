@@ -2,6 +2,7 @@
 @import "./Scss/palette";
 @import "./Scss/Navbar";
 @import "./Scss/Projects";
+@import "./Scss/Contact";
 
 .color-style-tags-synth {
     color: map-get($Synthwave, tags);
@@ -20,6 +21,15 @@
 }
 .color-style-declare-gruv {
     color: map-get($Gruvbox, declare);
+}
+.color-style-tags-solar {
+    color: map-get($Solarized, tags);
+}
+.color-style-tags-text-solar {
+    color: map-get($Solarized, tags-text);
+}
+.color-style-declare-solar {
+    color: map-get($Solarized, declare);
 }
 .blinking-cursor-synth {
     height: 22px;

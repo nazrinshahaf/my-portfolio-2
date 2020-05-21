@@ -1,33 +1,63 @@
 import React, { useState, useEffect } from "react";
 
-const Navbar = ({ scrollPosition }) => {
+const Navbar = ({ scrollPosition, screenHeight }) => {
   const [theme, setTheme] = useState(1);
 
   useEffect(() => {
-    if (scrollPosition <= 384) {
+    if (scrollPosition <= screenHeight) {
       setTheme(1);
-    }
-    if (scrollPosition > 384) {
+    } else if (
+      scrollPosition > screenHeight &&
+      scrollPosition <= screenHeight * 2
+    ) {
       setTheme(2);
+    } else if (
+      scrollPosition > screenHeight * 2 &&
+      scrollPosition < screenHeight * 3
+    ) {
+      setTheme(3);
+    } else {
+      setTheme(4);
     }
   });
-  console.log(scrollPosition);
-  console.log(theme, "THEME");
+  // console.log("scroll position =", scrollPosition);
+  // console.log("screen height =", screenHeight);
+  // console.log(theme, "THEME");
 
   return (
-    <header className={theme === 2 ? "header-gruv" : "header-synth"}>
+    <header
+      className={
+        theme === 4
+          ? "header-solar"
+          : theme === 3
+          ? "header-?"
+          : theme === 2
+          ? "header-gruv"
+          : "header-synth"
+      }
+    >
       <div>
         <h2>
           <span
             className={
-              theme === 2 ? "color-style-tags-gruv" : "color-style-tags-synth"
+              theme === 4
+                ? "color-style-tags-solar"
+                : theme === 3
+                ? "color-style-tags-?"
+                : theme === 2
+                ? "color-style-tags-gruv"
+                : "color-style-tags-synth"
             }
           >
             &lt;
           </span>
           <span
             className={
-              theme === 2
+              theme === 4
+                ? "color-style-tags-text-solar"
+                : theme === 3
+                ? "color-style-tags-text-?"
+                : theme === 2
                 ? "color-style-tags-text-gruv"
                 : "color-style-tags-text-synth"
             }
@@ -36,7 +66,13 @@ const Navbar = ({ scrollPosition }) => {
           </span>
           <span
             className={
-              theme === 2 ? "color-style-tags-gruv" : "color-style-tags-synth"
+              theme === 4
+                ? "color-style-tags-solar"
+                : theme === 3
+                ? "color-style-tags-?"
+                : theme === 2
+                ? "color-style-tags-gruv"
+                : "color-style-tags-synth"
             }
           >
             &gt;
@@ -47,14 +83,24 @@ const Navbar = ({ scrollPosition }) => {
         <h2>
           <span
             className={
-              theme === 2 ? "color-style-tags-gruv" : "color-style-tags-synth"
+              theme === 4
+                ? "color-style-tags-solar"
+                : theme === 3
+                ? "color-style-tags-?"
+                : theme === 2
+                ? "color-style-tags-gruv"
+                : "color-style-tags-synth"
             }
           >
             &lt;/
           </span>
           <span
             className={
-              theme === 2
+              theme === 4
+                ? "color-style-tags-text-solar"
+                : theme === 3
+                ? "color-style-tags-text-?"
+                : theme === 2
                 ? "color-style-tags-text-gruv"
                 : "color-style-tags-text-synth"
             }
@@ -63,7 +109,13 @@ const Navbar = ({ scrollPosition }) => {
           </span>
           <span
             className={
-              theme === 2 ? "color-style-tags-gruv" : "color-style-tags-synth"
+              theme === 4
+                ? "color-style-tags-solar"
+                : theme === 3
+                ? "color-style-tags-?"
+                : theme === 2
+                ? "color-style-tags-gruv"
+                : "color-style-tags-synth"
             }
           >
             &gt;

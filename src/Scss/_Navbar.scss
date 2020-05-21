@@ -21,6 +21,9 @@ header {
 .header-gruv {
     background-color: map-get($Gruvbox, background-alt);
 }
+.header-solar {
+    background-color: map-get($Solarized, background-alt);
+}
 
 header h2 {
     margin: 0;

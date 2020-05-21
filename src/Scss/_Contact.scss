@@ -1,0 +1,19 @@
+@import "./palette";
+
+.contact-main-background {
+    margin: 0 0 0 100px;
+    width: calc(100vw - 100px);
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.contact-form-section {
+    background-color: map-get($Solarized, background);
+
+    width: 50%;
+}
+.contact-display-window {
+    background-color: map-get($Solarized, background);
+    width: 50%;
+}

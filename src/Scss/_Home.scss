@@ -8,9 +8,9 @@
 }
 .home-page-background {
   margin: 0 0 0 100px;
-  background-color: map-get($Synthwave, background);
-  height: 100vh;
   width: calc(100vw - 100px);
+  height: 100vh;
+  background-color: map-get($Synthwave, background);
   display: flex;
   flex-direction: column;
   align-items: center;

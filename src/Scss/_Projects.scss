@@ -1,7 +1,8 @@
 @import "./palette";
 
 .projects-main-background {
-    width: 100vw;
+    margin: 0 0 0 100px;
+    width: calc(100vw - 100px);
     height: 100vh;
     background-color: map-get($Gruvbox, background);
 }
