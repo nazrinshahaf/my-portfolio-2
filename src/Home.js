@@ -34,12 +34,20 @@ const Home = () => {
         </h2>
         <h2>
           <span className="color-style-declare-synth">const </span>
-          <span className="color-style-tags-synth">Name</span> =
-          <span className="color-style-tags-text-synth"> 'Nazrin Shah'</span>
+          <span>
+            [ <span className="color-style-tags-synth">name</span>,
+            <span className="color-style-tags-synth"> setName</span> ]
+          </span>{" "}
+          =
+          <span>
+            {" "}
+            <span className="color-style-tags-synth">useState</span>(
+            <span className="color-style-tags-text-synth">'Nazrin Shah'</span>)
+          </span>
         </h2>
         <h2>
           <span className="color-style-declare-synth">let </span>
-          <span className="color-style-tags-synth">Skills</span> = [{" "}
+          <span className="color-style-tags-synth">skills</span> = [{" "}
           <span className="color-style-tags-text-synth">
             'Python', 'JavaScript', 'CSS', 'HTML', <br />
             <span style={{ marginLeft: "50px" }}>
