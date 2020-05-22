@@ -1,4 +1,8 @@
 import React, { useState, useEffect } from "react";
+import HomeIcon from "@material-ui/icons/Home";
+import AccountTreeIcon from "@material-ui/icons/AccountTree";
+import PersonIcon from "@material-ui/icons/Person";
+import MailIcon from "@material-ui/icons/Mail";
 
 const Navbar = ({ scrollPosition, screenHeight }) => {
   const [theme, setTheme] = useState(1);
@@ -81,10 +85,58 @@ const Navbar = ({ scrollPosition, screenHeight }) => {
         </h2>
       </div>
       <div className="header-link-container">
-        <a href="#Home">Home</a>
-        <a href="#Projects">Projects</a>
-        <a href="#">About</a>
-        <a href="#Contact">Contacts</a>
+        <a href="#Home">
+          <HomeIcon
+            className={
+              theme === 4
+                ? "header-icon-solar"
+                : theme === 3
+                ? "header-icon-?"
+                : theme === 2
+                ? "header-icon-gruv"
+                : "header-icon-synth"
+            }
+          ></HomeIcon>
+        </a>
+        <a href="#Projects">
+          <AccountTreeIcon
+            className={
+              theme === 4
+                ? "header-icon-solar"
+                : theme === 3
+                ? "header-icon-?"
+                : theme === 2
+                ? "header-icon-gruv"
+                : "header-icon-synth"
+            }
+          ></AccountTreeIcon>
+        </a>
+        <a href="#Contact">
+          <PersonIcon
+            className={
+              theme === 4
+                ? "header-icon-solar"
+                : theme === 3
+                ? "header-icon-?"
+                : theme === 2
+                ? "header-icon-gruv"
+                : "header-icon-synth"
+            }
+          ></PersonIcon>
+        </a>
+        <a href="#Contact">
+          <MailIcon
+            className={
+              theme === 4
+                ? "header-icon-solar"
+                : theme === 3
+                ? "header-icon-?"
+                : theme === 2
+                ? "header-icon-gruv"
+                : "header-icon-synth"
+            }
+          ></MailIcon>
+        </a>
       </div>
       <div>
         <h2>
