@@ -45,12 +45,14 @@ header h2 span {
 .header-link-container a {
   cursor: pointer;
 }
-.header-link-container a:hover svg {
-  transition: 0.3s;
-}
 .header-link-container a svg {
   font-size: 28px;
   border-radius: 4px;
+  box-shadow: 2px 3px;
+  border: 1px solid transparent;
+}
+.header-link-container a:hover svg {
+  transition: 0.3s;
 }
 .header-icon-synth {
   background-color: map-get($Synthwave, tags);
@@ -65,11 +67,17 @@ header h2 span {
   color: map-get($Solarized, background-alt);
 }
 .header-link-container a:hover .header-icon-synth {
-  background-color: map-get($Synthwave, declare);
+  background-color: map-get($Synthwave, background-alt);
+  color: map-get($Synthwave, tags);
+  border: 1px solid map-get($Synthwave, tags);
 }
 .header-link-container a:hover .header-icon-gruv {
-  background-color: map-get($Gruvbox, declare);
+  background-color: map-get($Gruvbox, background-alt);
+  color: map-get($Gruvbox, tags);
+  border: 1px solid map-get($Gruvbox, tags);
 }
 .header-link-container a:hover .header-icon-solar {
-  background-color: map-get($Solarized, declare);
+  background-color: map-get($Solarized, background-alt);
+  color: map-get($Solarized, tags);
+  border: 1px solid map-get($Solarized, tags);
 }
