@@ -111,7 +111,7 @@ const Navbar = ({ scrollPosition, screenHeight }) => {
             }
           ></AccountTreeIcon>
         </a>
-        <a href="#Contact">
+        <a href="#Projects">
           <PersonIcon
             className={
               theme === 4

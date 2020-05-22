@@ -28,6 +28,11 @@ const Home = () => {
       </div>
       <div className="home-page-h2-container">
         <h2>
+          <span style={{ color: "rgb(70,79,149)" }}>
+            // Full Stack Web Develepor
+          </span>
+        </h2>
+        <h2>
           <span className="color-style-declare-synth">const </span>
           <span className="color-style-tags-synth">Name</span> =
           <span className="color-style-tags-text-synth"> 'Nazrin Shah'</span>
