@@ -2,7 +2,7 @@ import React from "react";
 
 const Home = () => {
   return (
-    <div className="home-page-background">
+    <div className="home-page-background" id="Home">
       <div>
         <h1>
           <span className="color-style-tags-synth home-page-tags-fontsize">

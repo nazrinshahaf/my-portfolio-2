@@ -27,7 +27,7 @@ const Contact = () => {
   };
   console.log(focus);
   return (
-    <div className="contact-main-background">
+    <div className="contact-main-background" id="Contact">
       <div className="contact-form-section">
         <span className="contact-me-title">
           <span className="color-style-tags-solar">&lt;</span>

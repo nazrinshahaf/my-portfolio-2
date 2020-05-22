@@ -1,35 +1,48 @@
 @import "./palette";
 
 header {
-    background-color: map-get($Synthwave, background-alt);
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100px;
-    height: calc(100vh - 40px);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    font-family: Office Code Pro;
-    padding: 20px 0;
-    transition: background 0.8s ease;
+  background-color: map-get($Synthwave, background-alt);
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100px;
+  height: calc(100vh - 40px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  font-family: Office Code Pro;
+  padding: 20px 0;
+  transition: background 0.8s ease;
 }
 .header-synth {
-    background-color: map-get($Synthwave, background-alt);
+  background-color: map-get($Synthwave, background-alt);
 }
 .header-gruv {
-    background-color: map-get($Gruvbox, background-alt);
+  background-color: map-get($Gruvbox, background-alt);
 }
 .header-solar {
-    background-color: map-get($Solarized, background-alt);
+  background-color: map-get($Solarized, background-alt);
 }
 
 header h2 {
-    margin: 0;
-    font-size: 18px;
+  margin: 0;
+  font-size: 18px;
 }
 
 header h2 span {
-    transition: all 0.8s ease;
+  transition: all 0.8s ease;
+}
+
+.header-link-container {
+  height: 100%;
+  width: inherit;
+  display: flex;
+  color: white;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.header-link-container a {
+  cursor: pointer;
 }

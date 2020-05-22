@@ -20,6 +20,7 @@ const Navbar = ({ scrollPosition, screenHeight }) => {
       setTheme(4);
     }
   });
+
   // console.log("scroll position =", scrollPosition);
   // console.log("screen height =", screenHeight);
   // console.log(theme, "THEME");
@@ -78,6 +79,12 @@ const Navbar = ({ scrollPosition, screenHeight }) => {
             &gt;
           </span>
         </h2>
+      </div>
+      <div className="header-link-container">
+        <a href="#Home">Home</a>
+        <a href="#Projects">Projects</a>
+        <a href="#">About</a>
+        <a href="#Contact">Contacts</a>
       </div>
       <div>
         <h2>

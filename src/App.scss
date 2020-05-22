@@ -4,111 +4,114 @@
 @import "./Scss/Projects";
 @import "./Scss/Contact";
 
+body {
+  scroll-behavior: smooth;
+}
 .color-style-tags-synth {
-    color: map-get($Synthwave, tags);
+  color: map-get($Synthwave, tags);
 }
 .color-style-tags-text-synth {
-    color: map-get($Synthwave, tags-text);
+  color: map-get($Synthwave, tags-text);
 }
 .color-style-declare-synth {
-    color: map-get($Synthwave, declare);
+  color: map-get($Synthwave, declare);
 }
 .color-style-tags-gruv {
-    color: map-get($Gruvbox, tags);
+  color: map-get($Gruvbox, tags);
 }
 .color-style-tags-text-gruv {
-    color: map-get($Gruvbox, tags-text);
+  color: map-get($Gruvbox, tags-text);
 }
 .color-style-declare-gruv {
-    color: map-get($Gruvbox, declare);
+  color: map-get($Gruvbox, declare);
 }
 .color-style-tags-solar {
-    color: map-get($Solarized, tags);
+  color: map-get($Solarized, tags);
 }
 .color-style-tags-text-solar {
-    color: map-get($Solarized, tags-text);
+  color: map-get($Solarized, tags-text);
 }
 .color-style-declare-solar {
-    color: map-get($Solarized, declare);
+  color: map-get($Solarized, declare);
 }
 .blinking-cursor-synth,
 .blinking-cursor-solar {
-    height: 22px;
-    width: 5px;
-    font-weight: 800;
-    margin: 0 7px 0 0;
-    border: 1px solid map-get($Synthwave, tags-text);
-    background-color: map-get($Synthwave, tags-text);
-    -webkit-animation: 1s blink step-end infinite;
-    -moz-animation: 1s blink step-end infinite;
-    animation: 1s blink step-end infinite;
+  height: 22px;
+  width: 5px;
+  font-weight: 800;
+  margin: 0 7px 0 0;
+  border: 1px solid map-get($Synthwave, tags-text);
+  background-color: map-get($Synthwave, tags-text);
+  -webkit-animation: 1s blink step-end infinite;
+  -moz-animation: 1s blink step-end infinite;
+  animation: 1s blink step-end infinite;
 }
 .blinking-cursor-solar {
-    margin: 0 0 0 2px;
-    border: 1px solid map-get($Solarized, declare);
-    background-color: map-get($Solarized, declare);
-    color: transparent;
-    -webkit-animation: 1s blink-solar step-end infinite;
-    -moz-animation: 1s blink-solar step-end infinite;
-    animation: 1s blink-solar step-end infinite;
+  margin: 0 0 0 2px;
+  border: 1px solid map-get($Solarized, declare);
+  background-color: map-get($Solarized, declare);
+  color: transparent;
+  -webkit-animation: 1s blink-solar step-end infinite;
+  -moz-animation: 1s blink-solar step-end infinite;
+  animation: 1s blink-solar step-end infinite;
 }
 
 @keyframes blink {
-    from,
-    to {
-        background-color: transparent;
-    }
-    50% {
-        background-color: map-get($Synthwave, tags-text);
-    }
+  from,
+  to {
+    background-color: transparent;
+  }
+  50% {
+    background-color: map-get($Synthwave, tags-text);
+  }
 }
 
 @-moz-keyframes blink {
-    from,
-    to {
-        background-color: transparent;
-    }
-    50% {
-        background-color: map-get($Synthwave, tags-text);
-    }
+  from,
+  to {
+    background-color: transparent;
+  }
+  50% {
+    background-color: map-get($Synthwave, tags-text);
+  }
 }
 
 @-webkit-keyframes blink {
-    from,
-    to {
-        background-color: transparent;
-    }
-    50% {
-        background-color: map-get($Synthwave, tags-text);
-    }
+  from,
+  to {
+    background-color: transparent;
+  }
+  50% {
+    background-color: map-get($Synthwave, tags-text);
+  }
 }
 
 @keyframes blink-solar {
-    from,
-    to {
-        background-color: transparent;
-    }
-    50% {
-        background-color: map-get($Solarized, declare);
-    }
+  from,
+  to {
+    background-color: transparent;
+  }
+  50% {
+    background-color: map-get($Solarized, declare);
+  }
 }
 
 @-moz-keyframes blink-solar {
-    from,
-    to {
-        background-color: transparent;
-    }
-    50% {
-        background-color: map-get($Solarized, declare);
-    }
+  from,
+  to {
+    background-color: transparent;
+  }
+  50% {
+    background-color: map-get($Solarized, declare);
+  }
 }
 
 @-webkit-keyframes blink-solar {
-    from,
-    to {
-        background-color: transparent;
-    }
-    50% {
-        background-color: map-get($Solarized, declare);
-    }
+  from,
+  to {
+    background-color: transparent;
+  }
+  50% {
+    background-color: map-get($Solarized, declare);
+  }
 }
