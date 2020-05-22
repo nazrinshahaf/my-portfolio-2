@@ -1,56 +1,56 @@
 @import "./palette";
 
 .contact-main-background {
-    margin: 0 0 0 100px;
-    width: calc(100vw - 100px);
-    height: 100vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  margin: 0 0 0 100px;
+  width: calc(100vw - 100px);
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 .contact-form-section {
-    background-color: map-get($Solarized, background);
-    width: 50%;
-    padding: 0 50px;
-    font-family: Office Code Pro;
+  background-color: map-get($Solarized, background);
+  width: 50%;
+  padding: 0 50px;
+  font-family: Office Code Pro;
 }
 .contact-form-section form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .contact-me-title {
-    display: flex;
-    justify-content: center;
-    margin: 30px 0 0 0;
+  display: flex;
+  justify-content: center;
+  margin: 30px 0 0 0;
 }
 .contact-me-title h2 {
-    font-size: 32px;
-    color: map-get($Solarized, text-light);
-    margin: 0 7px 0 5px;
+  font-size: 32px;
+  color: map-get($Solarized, text-light);
+  margin: 0 7px 0 5px;
 }
 .contact-me-title span {
-    font-size: 22px;
-    line-height: 42px;
+  font-size: 22px;
+  line-height: 42px;
 }
 .contact-name-container {
-    margin: 35px 0 0 0;
-    display: flex;
-    justify-content: center;
+  margin: 35px 0 0 0;
+  display: flex;
+  justify-content: center;
 }
 .contact-name-container input,
 .contact-info-container input,
 #contact-textarea {
-    font-family: Office Code Pro;
-    margin: 5px 0 0 0;
-    font-size: 16px;
-    color: map-get($Solarized, text-light);
-    border: 2px solid map-get($Solarized, tags-text);
-    background-color: map-get($Solarized, background-alt);
+  font-family: Office Code Pro;
+  margin: 5px 0 0 0;
+  font-size: 16px;
+  color: map-get($Solarized, text-light);
+  border: 2px solid map-get($Solarized, tags-text);
+  background-color: map-get($Solarized, background-alt);
 }
 .contact-name-container input {
-    height: 25px;
-    width: 440px;
+  height: 25px;
+  width: 440px;
 }
 .contact-name-container input:focus,
 .contact-info-container input:focus,
@@ -58,66 +58,67 @@
 .contact-name-container input:hover,
 .contact-info-container input:hover,
 #contact-textarea:hover {
-    border: 2px solid map-get($Solarized, declare);
-    outline: none;
-    transition: border 0.5s ease;
+  border: 2px solid map-get($Solarized, declare);
+  outline: none;
+  transition: border 0.5s ease;
 }
 
 .contact-form-section form label {
-    display: flex;
-    flex-direction: column;
-    color: map-get($Solarized, text-light);
-    font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  color: map-get($Solarized, text-light);
+  font-size: 16px;
 }
 .contact-info-container {
-    display: flex;
-    justify-content: space-between;
-    margin: 50px 0 0 0;
-    width: 446px;
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 0 0 0;
+  width: 446px;
 }
 .contact-info-container input {
-    height: 25px;
-    width: 210px;
+  height: 25px;
+  width: 210px;
 }
 .contact-area-text-label {
-    margin: 35px 0 0 0;
+  margin: 35px 0 0 0;
 }
 #contact-textarea {
-    width: 440px;
-    height: 210px;
-    resize: none;
+  width: 440px;
+  height: 210px;
+  resize: none;
 }
 
 .contact-form-section form button {
-    cursor: pointer;
-    margin: 40px 0 0 0;
-    height: 30px;
-    width: 446px;
-    font-family: Office Code Pro;
-    font-size: 16px;
-    color: map-get($Solarized, text-light);
-    border: 2px solid map-get($Solarized, tags-text);
-    background-color: map-get($Solarized, background-alt);
+  cursor: pointer;
+  margin: 40px 0 0 0;
+  height: 30px;
+  width: 446px;
+  font-family: Office Code Pro;
+  font-size: 16px;
+  color: map-get($Solarized, text-light);
+  border: 2px solid map-get($Solarized, tags-text);
+  background-color: map-get($Solarized, background-alt);
 }
 .contact-form-section form button:hover {
-    border: 2px solid map-get($Solarized, declare);
-    transition: border 0.5s ease;
+  border: 2px solid map-get($Solarized, declare);
+  transition: border 0.5s ease;
 }
 .contact-display-window {
-    background-color: map-get($Solarized, background-alt);
-    width: 50%;
-    padding: 50px;
-    font-family: Office Code Pro;
-    color: map-get($Solarized, declare);
-    font-size: 18px;
+  background-color: map-get($Solarized, background-alt);
+  width: 50%;
+  padding: 50px;
+  font-family: Office Code Pro;
+  color: map-get($Solarized, declare);
+  font-size: 18px;
 }
 .contact-display-box {
-    border: 2px solid map-get($Solarized, tags-text);
-    width: 100%;
-    height: 100%;
-    overflow-y: auto;
+  box-shadow: 10px 10px map-get($Solarized, tags-text);
+  border: 2px solid map-get($Solarized, tags-text);
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
 }
 .contact-display-box div {
-    height: 23px;
-    margin: 2px 0 0 0;
+  height: 23px;
+  margin: 2px 0 0 0;
 }
