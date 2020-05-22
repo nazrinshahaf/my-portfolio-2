@@ -5,8 +5,11 @@ const Contact = () => {
   const [emaiText, setEmaiText] = useState("");
   const [phoneText, setPhoneText] = useState("");
   const [messageText, setMessageText] = useState("");
+
   const [date, setDate] = useState("");
   const [focus, setFocus] = useState("name");
+
+  const [startInputCheck, setStartInputCheck] = useState(false);
 
   useEffect(() => {
     const dateNow = new Date();
@@ -15,17 +18,29 @@ const Contact = () => {
 
   const handleNameInput = (e) => {
     setNameText(e.target.value);
+    if (e.target.value.length > 0) {
+      setStartInputCheck(true);
+    }
   };
   const handleEmailInput = (e) => {
     setEmaiText(e.target.value);
+    if (e.target.value.length > 0) {
+      setStartInputCheck(true);
+    }
   };
   const handlePhoneInput = (e) => {
     setPhoneText(e.target.value);
+    if (e.target.value.length > 0) {
+      setStartInputCheck(true);
+    }
   };
   const handleMessageInput = (e) => {
     setMessageText(e.target.value);
+    if (e.target.value.length > 0) {
+      setStartInputCheck(true);
+    }
   };
-  console.log(focus);
+
   return (
     <div className="contact-main-background" id="Contact">
       <div className="contact-form-section">
@@ -60,6 +75,13 @@ const Contact = () => {
                 type="email"
                 onChange={handleEmailInput}
                 onFocus={() => setFocus("email")}
+                className={
+                  startInputCheck === true &&
+                  (emaiText.indexOf("@") === -1 ||
+                    emaiText.indexOf(".com") === -1)
+                    ? "contact-input-box-disabled"
+                    : ""
+                }
               ></input>
             </label>
             <label for="contact-phone">
@@ -81,9 +103,30 @@ const Contact = () => {
               type="text"
               onChange={handleMessageInput}
               onFocus={() => setFocus("message")}
+              className={
+                messageText.length < 10 && startInputCheck === true
+                  ? "contact-input-box-disabled"
+                  : ""
+              }
             ></textarea>
           </label>
-          <button type="submit">Send</button>
+          <button
+            type="submit"
+            disabled={
+              messageText.length > 10 &&
+              (emaiText.indexOf("@") !== -1 || emaiText.indexOf(".com") !== -1)
+                ? false
+                : true
+            }
+            className={
+              messageText.length > 10 &&
+              (emaiText.indexOf("@") !== -1 || emaiText.indexOf(".com") !== -1)
+                ? ""
+                : "contact-form-button-disabled"
+            }
+          >
+            Send
+          </button>
         </form>
       </div>
       <div className="contact-display-window">

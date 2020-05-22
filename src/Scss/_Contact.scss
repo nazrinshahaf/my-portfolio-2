@@ -40,13 +40,15 @@
 }
 .contact-name-container input,
 .contact-info-container input,
-#contact-textarea {
+.contact-area-text-label textarea {
   font-family: Office Code Pro;
   margin: 5px 0 0 0;
   font-size: 16px;
   color: map-get($Solarized, text-light);
   border: 2px solid map-get($Solarized, tags-text);
   background-color: map-get($Solarized, background-alt);
+  transition: all 0.5s ease;
+  // box-shadow: 2px 2px map-get($Solarized, tags-text);
 }
 .contact-name-container input {
   height: 25px;
@@ -54,13 +56,30 @@
 }
 .contact-name-container input:focus,
 .contact-info-container input:focus,
-#contact-textarea:focus,
+.contact-area-text-label textarea:focus,
 .contact-name-container input:hover,
 .contact-info-container input:hover,
-#contact-textarea:hover {
+.contact-area-text-label textarea:hover {
   border: 2px solid map-get($Solarized, declare);
   outline: none;
-  transition: border 0.5s ease;
+  box-shadow: 2px 2px map-get($Solarized, declare);
+}
+.contact-name-container input:focus,
+.contact-info-container input:focus,
+.contact-area-text-label textarea:focus {
+  box-shadow: 2px 2px map-get($Solarized, declare);
+}
+
+.contact-info-container .contact-input-box-disabled,
+.contact-area-text-label .contact-input-box-disabled {
+  border-color: red;
+}
+.contact-info-container .contact-input-box-disabled:hover,
+.contact-info-container .contact-input-box-disabled:focus,
+.contact-area-text-label .contact-input-box-disabled:hover,
+.contact-area-text-label .contact-input-box-disabled:focus {
+  border-color: red;
+  box-shadow: 2px 2px red;
 }
 
 .contact-form-section form label {
@@ -98,10 +117,19 @@
   color: map-get($Solarized, text-light);
   border: 2px solid map-get($Solarized, tags-text);
   background-color: map-get($Solarized, background-alt);
+  transition: all 0.5s ease;
 }
 .contact-form-section form button:hover {
   border: 2px solid map-get($Solarized, declare);
-  transition: border 0.5s ease;
+  box-shadow: 2px 2px map-get($Solarized, declare);
+}
+.contact-form-section form .contact-form-button-disabled {
+  border-color: red;
+  box-shadow: none;
+}
+.contact-form-section form .contact-form-button-disabled:hover {
+  border-color: red;
+  box-shadow: 2px 2px red;
 }
 .contact-display-window {
   background-color: map-get($Solarized, background-alt);
