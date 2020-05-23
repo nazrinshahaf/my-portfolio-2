@@ -36,8 +36,8 @@ function App() {
         scrollPosition={scrollPosition}
         screenHeight={screenHeight}
       ></Navbar>
-      <Home></Home>
-      <Projects></Projects>
+      {/* <Home></Home>
+      <Projects></Projects> */}
       <About></About>
       <Contact></Contact>
     </div>

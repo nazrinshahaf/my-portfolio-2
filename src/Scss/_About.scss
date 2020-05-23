@@ -5,4 +5,85 @@
   width: calc(100vw - 100px);
   height: 100vh;
   background-color: map-get($Monokai, background);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Office Code Pro;
+}
+.about-container {
+  background-color: map-get($Monokai, background-alt);
+  width: 85%;
+  height: 85%;
+  color: map-get($Monokai, text-light);
+  border-radius: 4px;
+  text-align: center;
+}
+.about-container h2 {
+  font-size: 28px;
+  margin: 20px 0 0 0;
+}
+.about-content {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  display: grid;
+}
+.about-content::-webkit-scrollbar {
+  width: 10px;
+}
+.about-content::-webkit-scrollbar-track {
+  background-color: map-get($Monokai, background-alt);
+}
+.about-content::-webkit-scrollbar-thumb {
+  background-color: map-get($Monokai, background);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+}
+.about-content .about-grid-element {
+  text-align: left;
+  color: map-get($Monokai, text-light);
+  font-size: 15px;
+  // margin: 0;
+}
+.about-content .about-grid-element:hover {
+  background-color: map-get($Monokai, background);
+}
+
+.about-grid-number {
+  margin: 0 10px 0 0;
+}
+
+.about-color-green {
+  color: map-get($Monokai, text-green);
+}
+.about-color-yellow {
+  color: map-get($Monokai, text-yellow);
+}
+.about-color-pink {
+  color: map-get($Monokai, tags-text);
+}
+.about-color-purple {
+  color: map-get($Monokai, text-purple);
+}
+.about-color-gray {
+  color: map-get($Monokai, text-comment);
+}
+.about-color-blue {
+  color: map-get($Monokai, declare);
+}
+
+.about-tab-0 {
+  margin: 0 0 0 10px;
+}
+.about-tab-1 {
+  margin: 0 0 0 20px;
+}
+.about-tab-2 {
+  margin: 0 0 0 50px;
+}
+.about-tab-3 {
+  margin: 0 0 0 70px;
+}
+.about-italic {
+  font-style: italic;
 }
