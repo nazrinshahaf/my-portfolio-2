@@ -8,14 +8,6 @@ const About = () => {
   return (
     <div className="about-main-background" id="About">
       <div className="about-container">
-        {/* <h2>
-          <span className="color-style-tags-monokai">&lt;</span>
-          <span className="color-style-tags-text-monokai">h2</span>
-          <span className="color-style-tags-monokai">&gt;</span> About Me{" "}
-          <span className="color-style-tags-monokai">&lt;/</span>
-          <span className="color-style-tags-text-monokai">h2</span>
-          <span className="color-style-tags-monokai">&gt;</span>
-        </h2> */}
         <div className="about-content">
           <div className="about-grid-element">
             <span className="about-grid-number">1</span>{" "}
@@ -38,7 +30,7 @@ const About = () => {
             <span className="about-color-blue about-italic about-tab-1">
               const
             </span>{" "}
-            [aboutMe, <span className="about-color-green">setAboutMe</span>]{" "}
+            [myInfo, <span className="about-color-green">setMyInfo</span>]{" "}
             <span className="about-color-pink">=</span>
             <span className="about-color-green"> useState</span>(&#123;{" "}
             <span className="about-color-purple"></span>
@@ -67,22 +59,27 @@ const About = () => {
             <span className="about-tab-1">&#125;)</span>
           </div>
           <div className="about-grid-element">
-            <span className="about-grid-number">8</span>
+            <span className="about-grid-number">8</span>{" "}
+            <span className="about-color-blue about-italic about-tab-1">
+              const
+            </span>{" "}
+            [skills, <span className="about-color-green">setSkills</span>]{" "}
+            <span className="about-color-pink">=</span>
+            <span className="about-color-green"> useState</span>([
+            <span className="about-color-purple"></span>
           </div>
           <div className="about-grid-element">
             <span className="about-grid-number">9</span>
-            <span className="about-color-gray about-tab-1">
-              {" "}
-              //I'm a Full Stack Web Developer, and I'm always looking for
-              challenge.
+            <span className="about-color-yellow about-tab-2">
+              'JavaScript','React',
             </span>
+            ,
           </div>
           <div className="about-grid-element">
             <span>10</span>
           </div>
           <div className="about-grid-element">
             <span className="about-number-tab">11</span>
-            <span className="about-color-pink about-tab-1"> return</span> (
           </div>
           <div className="about-grid-element">
             <span className="about-number-tab">12</span>
@@ -95,9 +92,15 @@ const About = () => {
           </div>
           <div className="about-grid-element">
             <span className="about-number-tab">15</span>
+            <span className="about-color-gray about-tab-1">
+              {" "}
+              //I'm a Full Stack Web Developer, and I'm always looking for
+              challenge.
+            </span>
           </div>
           <div className="about-grid-element">
             <span className="about-number-tab">16</span>
+            <span className="about-color-pink about-tab-1"> return</span> (
           </div>
           <div className="about-grid-element">
             <span className="about-number-tab">17</span>
