@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from "react";
+
 import Home from "../src/Home";
 import Navbar from "../src/Navbar";
 import Projects from "../src/Projects";
 import Contact from "../src/Contact";
+import About from "../src/About";
 
 import "./App.scss";
 
@@ -36,7 +38,7 @@ function App() {
       ></Navbar>
       <Home></Home>
       <Projects></Projects>
-      <Projects></Projects>
+      <About></About>
       <Contact></Contact>
     </div>
   );

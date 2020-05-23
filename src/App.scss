@@ -3,10 +3,12 @@
 @import "./Scss/Navbar";
 @import "./Scss/Projects";
 @import "./Scss/Contact";
+@import "./Scss/About";
 
 body {
   scroll-behavior: smooth;
 }
+// SYNTH
 .color-style-tags-synth {
   color: map-get($Synthwave, tags);
 }
@@ -16,6 +18,7 @@ body {
 .color-style-declare-synth {
   color: map-get($Synthwave, declare);
 }
+// GRUV
 .color-style-tags-gruv {
   color: map-get($Gruvbox, tags);
 }
@@ -25,6 +28,7 @@ body {
 .color-style-declare-gruv {
   color: map-get($Gruvbox, declare);
 }
+// SOLAR
 .color-style-tags-solar {
   color: map-get($Solarized, tags);
 }
@@ -33,6 +37,16 @@ body {
 }
 .color-style-declare-solar {
   color: map-get($Solarized, declare);
+}
+// MONOKAI
+.color-style-tags-monokai {
+  color: map-get($Monokai, tags);
+}
+.color-style-tags-text-monokai {
+  color: map-get($Monokai, tags-text);
+}
+.color-style-declare-monokai {
+  color: map-get($Monokai, declare);
 }
 .blinking-cursor-synth,
 .blinking-cursor-solar {

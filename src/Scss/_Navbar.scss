@@ -24,6 +24,9 @@ header {
 .header-solar {
   background-color: map-get($Solarized, background-alt);
 }
+.header-monokai {
+  background-color: map-get($Monokai, background-alt);
+}
 
 header h2 {
   margin: 0;
@@ -66,6 +69,10 @@ header h2 span {
   background-color: map-get($Solarized, tags);
   color: map-get($Solarized, background-alt);
 }
+.header-icon-monokai {
+  background-color: map-get($Monokai, tags);
+  color: map-get($Monokai, background-alt);
+}
 .header-link-container a:hover .header-icon-synth {
   background-color: map-get($Synthwave, background-alt);
   color: map-get($Synthwave, tags);
@@ -80,4 +87,9 @@ header h2 span {
   background-color: map-get($Solarized, background-alt);
   color: map-get($Solarized, tags);
   border: 1px solid map-get($Solarized, tags);
+}
+.header-link-container a:hover .header-icon-monokai {
+  background-color: map-get($Monokai, background-alt);
+  color: map-get($Monokai, tags);
+  border: 1px solid map-get($Monokai, tags);
 }

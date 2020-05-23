@@ -1,27 +1,37 @@
 $Synthwave: (
-    "background": #302641,
-    "background-alt": #27203b,
-    "tags": rgba(92, 226, 249, 1),
-    "declare": rgba(249, 42, 173, 1),
-    "tags-text": rgb(122, 18, 182),
-    "text-dark": rgba(70, 79, 149, 1),
-    "text-light": rgba(182, 187, 187, 1),
+  "background": #302641,
+  "background-alt": #27203b,
+  "tags": rgba(92, 226, 249, 1),
+  "declare": rgba(249, 42, 173, 1),
+  "tags-text": rgb(122, 18, 182),
+  "text-dark": rgba(70, 79, 149, 1),
+  "text-light": rgba(182, 187, 187, 1),
 );
 
 $Gruvbox: (
-    "background": rgba(40, 40, 40, 1),
-    "background-alt": rgba(51, 51, 51, 1),
-    "tags": rgba(122, 165, 152, 1),
-    "declare": rgba(238, 73, 52, 1),
-    "tags-text": rgba(175, 187, 38, 1),
-    "text-light": rgba(204, 238, 199, 1),
+  "background": rgba(40, 40, 40, 1),
+  "background-alt": rgba(51, 51, 51, 1),
+  "tags": rgba(122, 165, 152, 1),
+  "declare": rgba(238, 73, 52, 1),
+  "tags-text": rgba(175, 187, 38, 1),
+  "text-light": rgba(204, 238, 199, 1),
 );
 
 $Solarized: (
-    "background": rgba(0, 43, 54, 1),
-    "background-alt": rgba(0, 46, 71, 1),
-    "tags": rgba(101, 123, 129, 1),
-    "declare": rgba(133, 153, 10, 1),
-    "tags-text": rgba(27, 139, 210, 1),
-    "text-light": rgba(187, 187, 187, 1),
+  "background": rgba(0, 43, 54, 1),
+  "background-alt": rgba(0, 46, 71, 1),
+  "tags": rgba(101, 123, 129, 1),
+  "declare": rgba(133, 153, 10, 1),
+  "tags-text": rgba(27, 139, 210, 1),
+  "text-light": rgba(187, 187, 187, 1),
+);
+
+$Monokai: (
+  "background": rgba(39, 40, 34, 1),
+  "background-alt": rgba(30, 31, 28, 1),
+  "tags": rgba(248, 248, 242, 1),
+  "declare": rgba(96, 211, 213, 1),
+  "tags-text": rgba(249, 38, 106, 1),
+  "text-light": rgba(248, 248, 242, 1),
+  "text-green": rgba(166, 266, 44, 1),
 );

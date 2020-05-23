@@ -35,7 +35,7 @@ const Navbar = ({ scrollPosition, screenHeight }) => {
         theme === 4
           ? "header-solar"
           : theme === 3
-          ? "header-?"
+          ? "header-monokai"
           : theme === 2
           ? "header-gruv"
           : "header-synth"
@@ -48,7 +48,7 @@ const Navbar = ({ scrollPosition, screenHeight }) => {
               theme === 4
                 ? "color-style-tags-solar"
                 : theme === 3
-                ? "color-style-tags-?"
+                ? "color-style-tags-monokai"
                 : theme === 2
                 ? "color-style-tags-gruv"
                 : "color-style-tags-synth"
@@ -61,7 +61,7 @@ const Navbar = ({ scrollPosition, screenHeight }) => {
               theme === 4
                 ? "color-style-tags-text-solar"
                 : theme === 3
-                ? "color-style-tags-text-?"
+                ? "color-style-tags-text-monokai"
                 : theme === 2
                 ? "color-style-tags-text-gruv"
                 : "color-style-tags-text-synth"
@@ -74,7 +74,7 @@ const Navbar = ({ scrollPosition, screenHeight }) => {
               theme === 4
                 ? "color-style-tags-solar"
                 : theme === 3
-                ? "color-style-tags-?"
+                ? "color-style-tags-monokai"
                 : theme === 2
                 ? "color-style-tags-gruv"
                 : "color-style-tags-synth"
@@ -91,7 +91,7 @@ const Navbar = ({ scrollPosition, screenHeight }) => {
               theme === 4
                 ? "header-icon-solar"
                 : theme === 3
-                ? "header-icon-?"
+                ? "header-icon-monokai"
                 : theme === 2
                 ? "header-icon-gruv"
                 : "header-icon-synth"
@@ -104,20 +104,20 @@ const Navbar = ({ scrollPosition, screenHeight }) => {
               theme === 4
                 ? "header-icon-solar"
                 : theme === 3
-                ? "header-icon-?"
+                ? "header-icon-monokai"
                 : theme === 2
                 ? "header-icon-gruv"
                 : "header-icon-synth"
             }
           ></AccountTreeIcon>
         </a>
-        <a href="#Projects">
+        <a href="#About">
           <PersonIcon
             className={
               theme === 4
                 ? "header-icon-solar"
                 : theme === 3
-                ? "header-icon-?"
+                ? "header-icon-monokai"
                 : theme === 2
                 ? "header-icon-gruv"
                 : "header-icon-synth"
@@ -130,7 +130,7 @@ const Navbar = ({ scrollPosition, screenHeight }) => {
               theme === 4
                 ? "header-icon-solar"
                 : theme === 3
-                ? "header-icon-?"
+                ? "header-icon-monokai"
                 : theme === 2
                 ? "header-icon-gruv"
                 : "header-icon-synth"
@@ -145,7 +145,7 @@ const Navbar = ({ scrollPosition, screenHeight }) => {
               theme === 4
                 ? "color-style-tags-solar"
                 : theme === 3
-                ? "color-style-tags-?"
+                ? "color-style-tags-monokai"
                 : theme === 2
                 ? "color-style-tags-gruv"
                 : "color-style-tags-synth"
@@ -158,7 +158,7 @@ const Navbar = ({ scrollPosition, screenHeight }) => {
               theme === 4
                 ? "color-style-tags-text-solar"
                 : theme === 3
-                ? "color-style-tags-text-?"
+                ? "color-style-tags-text-monokai"
                 : theme === 2
                 ? "color-style-tags-text-gruv"
                 : "color-style-tags-text-synth"
@@ -171,7 +171,7 @@ const Navbar = ({ scrollPosition, screenHeight }) => {
               theme === 4
                 ? "color-style-tags-solar"
                 : theme === 3
-                ? "color-style-tags-?"
+                ? "color-style-tags-monokai"
                 : theme === 2
                 ? "color-style-tags-gruv"
                 : "color-style-tags-synth"
