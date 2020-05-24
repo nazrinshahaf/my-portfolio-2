@@ -5,6 +5,7 @@ const About = () => {
     name: "Nazrin Shah Adrian Fernandez",
     location: "Cyberjaya, Selangor, Malaysia",
   });
+
   return (
     <div className="about-main-background" id="About">
       <div className="about-container">
@@ -59,7 +60,10 @@ const About = () => {
             <span className="about-tab-1">&#125;)</span>
           </div>
           <div className="about-grid-element">
-            <span className="about-grid-number">8</span>{" "}
+            <span className="about-grid-number">8</span>
+          </div>
+          <div className="about-grid-element">
+            <span className="about-grid-number">9</span>{" "}
             <span className="about-color-blue about-italic about-tab-1">
               const
             </span>{" "}
@@ -69,20 +73,20 @@ const About = () => {
             <span className="about-color-purple"></span>
           </div>
           <div className="about-grid-element">
-            <span className="about-grid-number">9</span>
+            <span>10</span>{" "}
             <span className="about-color-yellow about-tab-2">
-              'JavaScript','React',
+              'JavaScript','Python','HTML','CSS','React','jQuery',
             </span>
-            ,
-          </div>
-          <div className="about-grid-element">
-            <span>10</span>
           </div>
           <div className="about-grid-element">
             <span className="about-number-tab">11</span>
+            <span className="about-color-yellow about-tab-2">
+              'PostgresSQL','Bootsrap','Git','GraphQL'
+            </span>
           </div>
           <div className="about-grid-element">
-            <span className="about-number-tab">12</span>
+            <span className="about-number-tab">12</span>{" "}
+            <span className="about-tab-1">])</span>
           </div>
           <div className="about-grid-element">
             <span className="about-number-tab">13</span>
@@ -155,13 +159,15 @@ const About = () => {
           </div>
           <div className="about-grid-element">
             <span className="about-number-tab">33</span>
+            <span className="about-tab-1">);</span>
           </div>
           <div className="about-grid-element">
             <span className="about-number-tab">34</span>
+            <span>&#125;;</span>
           </div>
           <div className="about-grid-element">
             <span className="about-number-tab">35</span>
-            <span className="about-color-pink about-tab-0">export defualt</span>
+            <span className="about-color-pink">export defualt</span>
             <span className="about-color-green"> About</span>;
           </div>
         </div>

@@ -43,13 +43,16 @@
   text-align: left;
   color: map-get($Monokai, text-light);
   font-size: 15px;
-  // margin: 0;
+  height: 23px;
 }
 .about-content .about-grid-element:hover {
   background-color: map-get($Monokai, background);
 }
 
 .about-grid-number {
+  margin: 0 10px 0 0;
+}
+.about-number-tab {
   margin: 0 10px 0 0;
 }
 
